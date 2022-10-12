@@ -1,0 +1,13 @@
+@import "../../../global.scss";
+
+h4,
+p {
+  margin: 0;
+}
+
+.footer {
+  border-top: 2px $secondary dashed;
+  height: 25vh;
+  padding: 5em;
+  background-color: $background !important;
+}

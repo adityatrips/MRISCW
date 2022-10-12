@@ -1,0 +1,46 @@
+/* You can add global styles to this file, and also import other style files */
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap";
+@import "../node_modules/remixicon/fonts/remixicon.css";
+@import "./assets/styles/magic.css";
+
+a {
+  text-decoration: none !important;
+}
+
+* {
+  font-family: "Poppins", sans-serif !important;
+  color: #fff !important;
+  scroll-behavior: smooth;
+}
+
+.tac {
+  text-align: center;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.icon {
+  font-size: 24px;
+}
+
+.fw {
+  width: 100% !important;
+}
+
+router-outlet ~ * {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.black-text {
+  color: #000 !important;
+}

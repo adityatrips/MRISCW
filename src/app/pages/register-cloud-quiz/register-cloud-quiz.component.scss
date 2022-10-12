@@ -1,0 +1,28 @@
+@import "../../../global.scss";
+
+* {
+  color: #000 !important;
+}
+
+.register {
+  padding: 5em;
+}
+
+.form {
+  background: $background;
+  padding: 2.5em;
+  border-radius: 10px;
+  input {
+    background-color: transparent !important;
+    border-color: $secondary;
+    color: #fff !important;
+    &::placeholder {
+      color: #fff !important;
+    }
+  }
+  button {
+    background-color: $secondary;
+    color: $background !important;
+    border: none !important;
+  }
+}

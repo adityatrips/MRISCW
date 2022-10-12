@@ -1,0 +1,16 @@
+<div class="team">
+  <h1 class="bold">Team Members</h1>
+  <div class="row" *ngFor="let member of members">
+    <div class="four columns card" *ngFor="let m of member">
+      <img [src]="m.image" />
+      <div class="meta">
+        <h2 class="tac bold">{{ m.post }}</h2>
+        <h3 class="tac">{{ m.name }}</h3>
+        <p class="tac">{{ m.email }}</p>
+        <p class="tac">{{ m.phone }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

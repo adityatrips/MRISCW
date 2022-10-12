@@ -1,0 +1,162 @@
+<div id="home" class="landing">
+  <div id="particles-js"></div>
+  <div class="title">
+    <h1>MRISCW</h1>
+    <h1 class="title-h1 bold" style="font-size: 7em; letter-spacing: 5px">
+      XYZ Event
+    </h1>
+    <h5>Some School Event</h5>
+    <h5 style="margin-top: 0.75em; margin-bottom: 0.75em">
+      X<sup>N</sup> XXX 20XX
+    </h5>
+    <button (click)="move()" class="btn">REGISTER NOW</button>
+  </div>
+  <a href="#events" class="down"></a>
+</div>
+
+<div id="about" class="about">
+  <div class="frames">
+    <div class="text-frame">
+      <h3 class="tac bold">MRISCW</h3>
+      <h5 class="tac">SOME TAGLINE</h5>
+      <br />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis animi,
+        laudantium sunt repellendus nostrum esse numquam veritatis sit,
+        asperiores corporis necessitatibus voluptatibus quod quisquam quibusdam,
+        consequuntur sint praesentium et! Provident nesciunt excepturi velit vel
+        ab! Quia nisi sit pariatur eligendi reprehenderit unde, nostrum mollitia
+        ratione animi iusto iure ipsam necessitatibus.
+      </p>
+      <br />
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam numquam,
+        voluptate in quod odio repudiandae delectus unde saepe voluptas
+        accusantium ipsa similique sapiente, ipsum maiores non consectetur?
+        Porro non voluptatibus, pariatur, ab ipsa velit atque adipisci obcaecati
+        sint aperiam soluta sed consequatur ex, minima eum? Necessitatibus
+        magnam placeat et quia.
+      </p>
+    </div>
+    <div class="video-frame">
+      <iframe
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        title="Rick Astley - Never Gonna Give You Up (Official Music Video)"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <p class="teaser black-text">TEASER</p>
+    </div>
+  </div>
+</div>
+
+<div id="events" class="events">
+  <div>
+    <p style="margin-bottom: 2em">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed temporibus
+      ducimus maxime cupiditate id="events" titlessculpa provident cumque eius
+      tenetur non explicabo?
+    </p>
+    <div class="event-list row">
+      <div class="event three columns">
+        <div id="img-back">
+          <img
+            class="event-image"
+            id="event-image1"
+            (mouseover)="onMouseEnter('#event-image1')"
+            (mouseout)="onMouseLeave('#event-image1')"
+            src="https://via.placeholder.com/500"
+          />
+          <div class="event-title" id="event-title1">Event 1</div>
+        </div>
+        <button routerLink="/register/cloud-quiz">Register...</button>
+      </div>
+
+      <div class="event three columns">
+        <div id="img-back">
+          <img
+            class="event-image"
+            id="event-image2"
+            (mouseover)="onMouseEnter('#event-image2')"
+            (mouseout)="onMouseLeave('#event-image2')"
+            src="https://via.placeholder.com/500"
+          />
+          <div class="event-title" id="event-title2">Event 2</div>
+        </div>
+        <button>Register...</button>
+      </div>
+
+      <div class="event three columns">
+        <div id="img-back">
+          <img
+            class="event-image"
+            id="event-image3"
+            (mouseover)="onMouseEnter('#event-image3')"
+            (mouseout)="onMouseLeave('#event-image3')"
+            src="https://via.placeholder.com/500"
+          />
+          <div class="event-title" id="event-title3">Event 3</div>
+        </div>
+        <button>Register...</button>
+      </div>
+      <div class="event three columns">
+        <div id="img-back">
+          <img
+            class="event-image"
+            id="event-image4"
+            (mouseover)="onMouseEnter('#event-image4')"
+            (mouseout)="onMouseLeave('#event-image4')"
+            src="https://via.placeholder.com/500"
+          />
+          <div class="event-title" id="event-title4">Event 4</div>
+        </div>
+        <button>Register...</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="stats" class="stats">
+  <h1>Certificates, Goodies and much more...</h1>
+</div>
+
+<div id="sponsors" class="sponsors">
+  <div class="row" style="margin-bottom: 2.5em">
+    <div class="three columns">
+      <img class="sponsor-image" src="https://via.placeholder.com/500" />
+    </div>
+    <div class="three columns">
+      <img class="sponsor-image" src="https://via.placeholder.com/500" />
+    </div>
+    <div class="three columns">
+      <img class="sponsor-image" src="https://via.placeholder.com/500" />
+    </div>
+    <div class="three columns">
+      <img class="sponsor-image" src="https://via.placeholder.com/500" />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="three columns">
+      <img class="sponsor-image" src="https://via.placeholder.com/500" />
+    </div>
+    <div class="three columns">
+      <img class="sponsor-image" src="https://via.placeholder.com/500" />
+    </div>
+    <div class="three columns">
+      <img class="sponsor-image" src="https://via.placeholder.com/500" />
+    </div>
+    <div class="three columns">
+      <img class="sponsor-image" src="https://via.placeholder.com/500" />
+    </div>
+  </div>
+</div>
+
+<div id="prev" class="prev">
+  <div class="owl-carousel owl-theme">
+    <div *ngFor="let i of links">
+      <img class="carousel-img" [src]="i" />
+    </div>
+  </div>
+</div>
